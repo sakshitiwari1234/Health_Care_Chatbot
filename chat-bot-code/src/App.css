@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .app {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
+    color: #fff;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    animation: fadeInUp 0.5s ease;
+  }
+  
+  .chat {
+    flex-grow: 1;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .message {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .timestamp {
+    font-size: 0.8em;
+    color: #888;
+    margin-right: 5px;
+  }
+  
+  .user-message {
+    background-color: #DCF8C6;
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 20%;
+    text-align: right;
+  }
+  
+  .bot-message {
+    background-color: #E0E0E0;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 20%;
+    text-align: left;
+  }
+  
+  .bot-message .message {
+    margin-bottom: 5px;
+  }
+  
+  .bot-message p {
+    margin: 0;
+  }
+  
+  .input-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 1em;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45A049;
+  }
+  
+  .user-questions {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease;
+  }
+  
+  .user-questions h2 {
+    color: #333;
+  }
+  
+  .user-questions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-questions li {
+    background-color: #E0E0E0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
